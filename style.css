@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 50px auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-top: 20px;
+}
+
+#insertSection,
+#extractSection {
+  border: 2px solid rgb(117, 117, 255);
+  border-radius: 5px;
+  width: 70%;
+  margin: 30px auto 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#coverImage,
+#watermarkImage,
+#insertKey,
+#watermarkedImage,
+#extractKey {
+  margin-bottom: 10px;
+}
+
+#insertKey,
+#extractKey {
+  width: 245px;
+  padding: 5px;
+}
+
+#resultImage {
+  max-width: 100%;
+}
+
+#extract,
+#insert,
+#tombol {
+  padding: 8px 20px;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+#tombol {
+  background-color: rgb(255, 125, 125);
+}
+
+#tombol:hover {
+  background-color: rgb(128, 61, 61);
+}
+
+#extract {
+  background-color: rgb(113, 113, 255);
+}
+
+#extract:hover {
+  background-color: rgb(47, 47, 105);
+}
+
+#insert:hover {
+  background-color: rgb(75, 100, 24);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fragile Watermarking Web App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Watermarking Web App</h1>
+      <div id="menu">
+        <button id="insert" onclick="showInsert()">Insert Watermark</button>
+        <button id="extract" onclick="showExtract()">Extract Watermark</button>
+      </div>
+      <div id="insertSection" class="section">
+        <h2>Menu Insert Watermarking</h2>
+        <input type="file" id="coverImage" accept="image/*" /><br />
+        <input type="file" id="watermarkImage" accept="image/*" /><br />
+        <input type="text" id="insertKey" placeholder="Enter key" /><br />
+        <button id="tombol" onclick="insertWatermark()">
+          Insert Watermark
+        </button>
+        <canvas id="canvasOutput" style="display: none"></canvas>
+      </div>
+      <div id="extractSection" class="section">
+        <h2>Menu Extract Watermarking</h2>
+        <input type="file" id="watermarkedImage" accept="image/*" /><br />
+        <input type="text" id="extractKey" placeholder="Enter key" /><br />
+        <button id="tombol" onclick="extractWatermark()">
+          Extract Watermark
+        </button>
+        <canvas id="canvasExtract" style="display: none"></canvas>
+      </div>
+      <div id="resultSection" class="section">
+        <h2>Result</h2>
+        <img id="resultImage" src="" alt="Result Image" /><br />
+        <button id="downloadBtn" style="display: none">
+          Download Result Image
+        </button>
+        <p id="psnrResult"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
